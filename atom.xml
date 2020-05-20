@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiang0104.github.io</id>
     <title>渡江人</title>
-    <updated>2020-05-20T06:58:45.106Z</updated>
+    <updated>2020-05-20T07:00:06.649Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiang0104.github.io"/>
     <link rel="self" href="https://qiang0104.github.io/atom.xml"/>
@@ -11,24 +11,11 @@
     <icon>https://qiang0104.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 渡江人</rights>
     <entry>
-        <title type="html"><![CDATA[智能拼音输入法]]></title>
-        <id>https://qiang0104.github.io/post/zhi-neng-pin-yin-shu-ru-fa/</id>
-        <link href="https://qiang0104.github.io/post/zhi-neng-pin-yin-shu-ru-fa/">
-        </link>
-        <updated>2020-05-20T06:50:53.000Z</updated>
-        <content type="html"><![CDATA[<p>习作<br>
-《随机信号处理》课程实践<br>
-主要的思路是将输入的拼音串视为输入信号，所求的输出是由拼音串推出的汉字串。</p>
-<p>GitHub链接:https://github.com/QianG0104/PinYin_Input_Method</p>
-<p>主要的算法是维特比算法，理论基础是隐马尔科夫模型</p>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[PicLab综合图像处理系统]]></title>
         <id>https://qiang0104.github.io/post/piclab/</id>
         <link href="https://qiang0104.github.io/post/piclab/">
         </link>
-        <updated>2020-05-20T05:52:46.000Z</updated>
+        <updated>2020-01-04T05:52:46.000Z</updated>
         <content type="html"><![CDATA[<p>大四有一门课叫做图像处理，<br>
 另外还有个实践课叫图像处理综合实践</p>
 <p>于是决定带小伙伴们莽一波</p>
@@ -51,6 +38,19 @@
 剩下的机械性工作交给队员们就没有太大压力了，上手极快，<br>
 而且后期很容易继续拓展和修改。</p>
 <p>详细的介绍可以在GitHub里查看我当时的课程汇报PPT和代码注释</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[智能拼音输入法]]></title>
+        <id>https://qiang0104.github.io/post/pinyin_input/</id>
+        <link href="https://qiang0104.github.io/post/pinyin_input/">
+        </link>
+        <updated>2019-07-20T06:50:53.000Z</updated>
+        <content type="html"><![CDATA[<p>习作<br>
+《随机信号处理》课程实践<br>
+主要的思路是将输入的拼音串视为输入信号，所求的输出是由拼音串推出的汉字串。</p>
+<p>GitHub链接:https://github.com/QianG0104/PinYin_Input_Method</p>
+<p>主要的算法是维特比算法，理论基础是隐马尔科夫模型</p>
 ]]></content>
     </entry>
     <entry>
