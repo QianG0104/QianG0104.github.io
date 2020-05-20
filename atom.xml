@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiang0104.github.io</id>
     <title>渡江人</title>
-    <updated>2020-05-20T06:50:35.283Z</updated>
+    <updated>2020-05-20T06:58:45.106Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiang0104.github.io"/>
     <link rel="self" href="https://qiang0104.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://qiang0104.github.io/images/avatar.png</logo>
     <icon>https://qiang0104.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 渡江人</rights>
+    <entry>
+        <title type="html"><![CDATA[智能拼音输入法]]></title>
+        <id>https://qiang0104.github.io/post/zhi-neng-pin-yin-shu-ru-fa/</id>
+        <link href="https://qiang0104.github.io/post/zhi-neng-pin-yin-shu-ru-fa/">
+        </link>
+        <updated>2020-05-20T06:50:53.000Z</updated>
+        <content type="html"><![CDATA[<p>习作<br>
+《随机信号处理》课程实践<br>
+主要的思路是将输入的拼音串视为输入信号，所求的输出是由拼音串推出的汉字串。</p>
+<p>GitHub链接:https://github.com/QianG0104/PinYin_Input_Method</p>
+<p>主要的算法是维特比算法，理论基础是隐马尔科夫模型</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PicLab综合图像处理系统]]></title>
         <id>https://qiang0104.github.io/post/piclab/</id>
