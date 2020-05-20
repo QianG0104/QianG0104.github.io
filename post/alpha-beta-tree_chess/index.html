@@ -1,65 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://qiang0104.github.io</id>
-    <title>渡江人</title>
-    <updated>2020-05-20T07:15:17.273Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://qiang0104.github.io"/>
-    <link rel="self" href="https://qiang0104.github.io/atom.xml"/>
-    <subtitle>@渡江人-ZhangJinqian的个人主页</subtitle>
-    <logo>https://qiang0104.github.io/images/avatar.png</logo>
-    <icon>https://qiang0104.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 渡江人</rights>
-    <entry>
-        <title type="html"><![CDATA[PicLab综合图像处理系统]]></title>
-        <id>https://qiang0104.github.io/post/piclab/</id>
-        <link href="https://qiang0104.github.io/post/piclab/">
-        </link>
-        <updated>2020-01-04T05:52:46.000Z</updated>
-        <content type="html"><![CDATA[<p>大四有一门课叫做图像处理，<br>
-另外还有个实践课叫图像处理综合实践</p>
-<p>于是决定带小伙伴们莽一波</p>
-<p>就把图像处理课上的功能都囊括进了这个综合图像处理系统里，<br>
-取名PicLab</p>
-<p>GitHub链接：https://github.com/QianG0104/PicLab--A_Image_Process_System</p>
-<p>面对复杂的的任务，可以先进行高度的拆分和抽象，<br>
-我将图像处理流程拆分成了三大部分：<br>
-平行遍历，多值收集+多值处理，单值输出</p>
-<p>在此基础上，我编写了一个叫做Iterator的类，我也叫它通用迭代器<br>
-这个类除了构造函数外主要带有三个基本的类方法<br>
-分别取名叫取样、收集、映射，来完成上面所说的三大部分工作</p>
-<p>纵观图像处理这门课程，<br>
-无论是在空间域还是频域，<br>
-无论是做图像变换、增强、平滑与锐化、伪彩色等等任务，<br>
-都完全可以直接通过组合上述三个函数来实现，<br>
-所以无论要实现哪种图像处理，套用公式来机械性组装即可</p>
-<p>所以我完成了所有类的编写和基本函数的实现之后，<br>
-在注释里详细的标注了如何对上述三个函数进行传参和调用，<br>
-剩下的机械性工作交给队员们就没有太大压力了，上手极快，<br>
-而且后期很容易继续拓展和修改。</p>
-<p>详细的介绍可以在GitHub里查看我当时的课程汇报PPT和代码注释</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[智能拼音输入法]]></title>
-        <id>https://qiang0104.github.io/post/pinyin_input/</id>
-        <link href="https://qiang0104.github.io/post/pinyin_input/">
-        </link>
-        <updated>2019-07-20T06:50:53.000Z</updated>
-        <content type="html"><![CDATA[<p>习作<br>
-《随机信号处理》课程实践<br>
-主要的思路是将输入的拼音串视为输入信号，所求的输出是由拼音串推出的汉字串。</p>
-<p>GitHub链接:https://github.com/QianG0104/PinYin_Input_Method</p>
-<p>主要的算法是维特比算法，理论基础是隐马尔科夫模型</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[博弈树四子棋]]></title>
-        <id>https://qiang0104.github.io/post/alpha-beta-tree_chess/</id>
-        <link href="https://qiang0104.github.io/post/alpha-beta-tree_chess/">
-        </link>
-        <updated>2019-04-05T07:08:38.000Z</updated>
-        <content type="html"><![CDATA[<p>四子棋游戏：游戏双方持不同颜色的棋子，分先后手依次落子，规则为：在M行N列的棋盘中，起手每次只能在每一列当前最底部落子，若某一列已经落满，则不能再该列中落子。当某一方在横、纵、斜四个方向中任意一个方向上先使自己的棋子连成四个或以上则取胜，若棋盘落满时双方都没能达成目标则为平局。此问题是经典的棋类博弈问题，使用alpha-beta剪枝算法解决</p>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>博弈树四子棋 | 渡江人</title>
+<link rel="shortcut icon" href="https://qiang0104.github.io/favicon.ico?v=1589958910785">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://qiang0104.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="博弈树四子棋 | 渡江人 - Atom Feed" href="https://qiang0104.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="四子棋游戏：游戏双方持不同颜色的棋子，分先后手依次落子，规则为：在M行N列的棋盘中，起手每次只能在每一列当前最底部落子，若某一列已经落满，则不能再该列中落子。当某一方在横、纵、斜四个方向中任意一个方向上先使自己的棋子连成四个或以上则取胜，若..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://qiang0104.github.io">
+  <img class="avatar" src="https://qiang0104.github.io/images/avatar.png?v=1589958910785" alt="">
+  </a>
+  <h1 class="site-title">
+    渡江人
+  </h1>
+  <p class="site-description">
+    @渡江人-ZhangJinqian的个人主页
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              博弈树四子棋
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-04-05
+              </span>
+              <span>
+                9 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>四子棋游戏：游戏双方持不同颜色的棋子，分先后手依次落子，规则为：在M行N列的棋盘中，起手每次只能在每一列当前最底部落子，若某一列已经落满，则不能再该列中落子。当某一方在横、纵、斜四个方向中任意一个方向上先使自己的棋子连成四个或以上则取胜，若棋盘落满时双方都没能达成目标则为平局。此问题是经典的棋类博弈问题，使用alpha-beta剪枝算法解决</p>
 <p>落子策略：极小极大算法<br>
 选用博弈论中常见的极小极大（MinMax）算法进行决策选择，具体实现方案为递归式，流程如下：<br>
 （1）对于每一个待落子的M行N列棋盘（搜索深度初始为0），遍历其N个候选落子点（搜索深度+1），得到最终返回值作为其评估值，选择估值最大的位置作为最终落子点；<br>
@@ -125,56 +154,77 @@ situation类（局面类），包含一个记录棋盘的二维数组map[ ][ ]�
 包含判断游戏结束、具体模式评分等</p>
 <p>实验结果及分析<br>
 改变最大深度的值，通过模拟棋局的结果数据发现，在对手相同的情况下，最大搜索深度越小，胜率越低；增大最大搜索深度，程序落子时间变长，但胜率不断提高，能战胜难度更高的对手。当最大搜索深度取6时，本AI达到的棋力水平大约在TestCases中55~60之间</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[局域网联网对战中国象棋]]></title>
-        <id>https://qiang0104.github.io/post/Online_Chess/</id>
-        <link href="https://qiang0104.github.io/post/Online_Chess/">
-        </link>
-        <updated>2018-08-30T07:01:41.000Z</updated>
-        <content type="html"><![CDATA[<p>中国象棋属于二人对抗性游戏的一种，本习作基于Qt实现了支持网络对战的象棋软件，还支持残局的保存与恢复</p>
-<p>GitHub链接：https://github.com/QianG0104/Chinese_Chess_Player</p>
-<p>基本规则：<br>
-以下三种情况被认为己方负：<br>
-（1）	己方的帅（将）被对方棋子吃掉。（此处设计为将死或将被吃掉均可）<br>
-（2）	己方发出认输请求。<br>
-（3）	己方走棋超出每步时间限制。</p>
-<p>软件功能：<br>
-（1）	实现软件的主界面和菜单栏，点击菜单栏弹出弹窗进行连接。<br>
-（2）	server端等待连接时可以取消，client端能输入对战的IP及端口，并显示成功建立连接。<br>
-（3）	QT绘制象棋棋盘及棋子。<br>
-（4）	软件能依据规则正确走子。<br>
-（5）	软件能自动判断胜负，被将军时发出特殊音效；提供了认输按钮，一方认输游戏结束；每步走子有时间限制，超时判负。<br>
-（6）	游戏结束，在server端和client端分别弹窗说明游戏结束，并注明获胜方。<br>
-（7）	菜单栏拥有残局输入的入口，选择文件载入加载残局，建立连接进行对战。<br>
-（8）	残局对战的保存文件要求采用固定格式（后附说明）。<br>
-（9）	对战进行中可以点击相应按钮，保存残局到本地文件，此时server/client端都会将残局保存到本地文件</p>
-<p>残局文件格式<br>
-以字符串方式保存，方便助教检查作业时进行测试。<br>
-文件分为两部分，每部分第一行代表颜色（red/black）<br>
-接下来有7行，分别代表将/士/象/马/车/炮/兵的棋子位置<br>
-每行第一个数代表该种棋子的数量n，代表该类棋子的数目，之后会有n个格式为&lt;x,y&gt;的坐标，代表n个棋子的位置。（坐标原点为红方的左下点，记作&lt;0,0&gt;）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WELCOME]]></title>
-        <id>https://qiang0104.github.io/post/welcome/</id>
-        <link href="https://qiang0104.github.io/post/welcome/">
-        </link>
-        <updated>2018-01-04T05:45:10.000Z</updated>
-        <content type="html"><![CDATA[<p>欢迎来到QianG的GitHub主页。</p>
-<p>在这里我上传了一些从学习编程以来的个人小习作，</p>
-<p>从比较早期的程序比如自动还原魔方</p>
-<p>到后来稍微具有一点儿规模的应用程序<br>
-比如中国象棋（带GUI）、AI四子棋（带GUI）、拼音输入法等等</p>
-<p>以及带领小团队编写的综合图像处理系统PicLab（带GUI）</p>
-<p>另外还有一些神经网络方面的实践<br>
-RNN的文本情绪识别（也尝试了CNN就是结果比较惨不忍睹）<br>
-RankIQA图像质量评估<br>
-基于深度学习的SAR图像车辆目标自动识别（正在做的毕业设计）</p>
-<p>目前上传的项目并不多，主要作为展示之用。<br>
-在数学建模竞赛中的一些更多的习作还有待整理。</p>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://qiang0104.github.io/post/Online_Chess/">
+              <h3 class="post-title">
+                局域网联网对战中国象棋
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://qiang0104.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
