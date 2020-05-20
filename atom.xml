@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiang0104.github.io</id>
     <title>渡江人</title>
-    <updated>2020-05-20T08:06:36.232Z</updated>
+    <updated>2020-05-20T08:16:24.507Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiang0104.github.io"/>
     <link rel="self" href="https://qiang0104.github.io/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://qiang0104.github.io/images/avatar.png</logo>
     <icon>https://qiang0104.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 渡江人</rights>
+    <entry>
+        <title type="html"><![CDATA[SAR-ATR：我的毕业设计]]></title>
+        <id>https://qiang0104.github.io/post/sar-atr/</id>
+        <link href="https://qiang0104.github.io/post/sar-atr/">
+        </link>
+        <updated>2020-05-12T08:08:35.000Z</updated>
+        <content type="html"><![CDATA[<p>个人对人工智能方向十分感兴趣，毕业设计也选择的是与之相关的SAR图像自动目标识别工作</p>
+<p>由于毕业设计还没有完成，论文也尚未公开，所以对具体工作不做过多的赘述</p>
+<p>主要的技术思路简要总结如下</p>
+<ol>
+<li>
+<p>首先定义了MSTAR数据集上的样本规模尺度，提出了标准样本、受限样本、小样本三情形，<br>
+同时还定义了样本增广方案来扩增样本规模。</p>
+</li>
+<li>
+<p>研究这些情形下适用的CNN结构和功能<br>
+（尝试过的CNN模型有AlexNet、VGG、ResNet、DenseNet，具体的实验方案和结果待结题后上传论文）</p>
+</li>
+<li>
+<p>针对小样本条件，常规的CNN训练方式并不适用。<br>
+提出了本课题的主要创新点：基于孪生网络的小样本识别模型。能够适应单样本学习（One-Shot）等极端条件。</p>
+</li>
+</ol>
+<p>GitHub链接（请勿转载）：https://github.com/QianG0104/SAR-ATR</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PicLab综合图像处理系统]]></title>
         <id>https://qiang0104.github.io/post/piclab/</id>
