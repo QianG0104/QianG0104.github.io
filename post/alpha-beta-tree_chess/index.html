@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>博弈树四子棋 | 渡江人</title>
-<link rel="shortcut icon" href="https://qiang0104.github.io/favicon.ico?v=1589958910785">
+<link rel="shortcut icon" href="https://qiang0104.github.io/favicon.ico?v=1589959012326">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://qiang0104.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="博弈树四子棋 | 渡江人 - Atom Feed" href="https://qiang0104.github.io/atom.xml">
@@ -21,7 +21,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://qiang0104.github.io">
-  <img class="avatar" src="https://qiang0104.github.io/images/avatar.png?v=1589958910785" alt="">
+  <img class="avatar" src="https://qiang0104.github.io/images/avatar.png?v=1589959012326" alt="">
   </a>
   <h1 class="site-title">
     渡江人
@@ -89,6 +89,7 @@
             <div class="post-content-wrapper">
               <div class="post-content">
                 <p>四子棋游戏：游戏双方持不同颜色的棋子，分先后手依次落子，规则为：在M行N列的棋盘中，起手每次只能在每一列当前最底部落子，若某一列已经落满，则不能再该列中落子。当某一方在横、纵、斜四个方向中任意一个方向上先使自己的棋子连成四个或以上则取胜，若棋盘落满时双方都没能达成目标则为平局。此问题是经典的棋类博弈问题，使用alpha-beta剪枝算法解决</p>
+<p>GitHub链接：https://github.com/QianG0104/Connect_Four_Player</p>
 <p>落子策略：极小极大算法<br>
 选用博弈论中常见的极小极大（MinMax）算法进行决策选择，具体实现方案为递归式，流程如下：<br>
 （1）对于每一个待落子的M行N列棋盘（搜索深度初始为0），遍历其N个候选落子点（搜索深度+1），得到最终返回值作为其评估值，选择估值最大的位置作为最终落子点；<br>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qiang0104.github.io</id>
     <title>渡江人</title>
-    <updated>2020-05-20T07:15:50.674Z</updated>
+    <updated>2020-05-20T07:16:55.744Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qiang0104.github.io"/>
     <link rel="self" href="https://qiang0104.github.io/atom.xml"/>
@@ -60,6 +60,7 @@
         </link>
         <updated>2019-04-05T07:08:38.000Z</updated>
         <content type="html"><![CDATA[<p>四子棋游戏：游戏双方持不同颜色的棋子，分先后手依次落子，规则为：在M行N列的棋盘中，起手每次只能在每一列当前最底部落子，若某一列已经落满，则不能再该列中落子。当某一方在横、纵、斜四个方向中任意一个方向上先使自己的棋子连成四个或以上则取胜，若棋盘落满时双方都没能达成目标则为平局。此问题是经典的棋类博弈问题，使用alpha-beta剪枝算法解决</p>
+<p>GitHub链接：https://github.com/QianG0104/Connect_Four_Player</p>
 <p>落子策略：极小极大算法<br>
 选用博弈论中常见的极小极大（MinMax）算法进行决策选择，具体实现方案为递归式，流程如下：<br>
 （1）对于每一个待落子的M行N列棋盘（搜索深度初始为0），遍历其N个候选落子点（搜索深度+1），得到最终返回值作为其评估值，选择估值最大的位置作为最终落子点；<br>
