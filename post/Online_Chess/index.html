@@ -2,21 +2,19 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>WELCOME | 渡江人</title>
+<title>局域网联网对战中国象棋 | 渡江人</title>
 <link rel="shortcut icon" href="https://qiang0104.github.io/favicon.ico?v=1589958304271">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://qiang0104.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="WELCOME | 渡江人 - Atom Feed" href="https://qiang0104.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="局域网联网对战中国象棋 | 渡江人 - Atom Feed" href="https://qiang0104.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="欢迎来到QianG的GitHub主页。
-在这里我上传了一些从学习编程以来的个人小习作，
-从比较早期的程序比如自动还原魔方
-到后来稍微具有一点儿规模的应用程序
-比如中国象棋（带GUI）、AI四子棋（带GUI）、拼音输入法等等
-以及带领小团队编..." />
+    <meta name="description" content="中国象棋属于二人对抗性游戏的一种，本习作基于Qt实现了支持网络对战的象棋软件，还支持残局的保存与恢复
+GitHub链接：https://github.com/QianG0104/Chinese_Chess_Player
+基本规则：
+以下三种..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -79,32 +77,42 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              WELCOME
+              局域网联网对战中国象棋
             </h2>
             <div class="post-info">
               <span>
-                2018-01-04
+                2018-08-30
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>欢迎来到QianG的GitHub主页。</p>
-<p>在这里我上传了一些从学习编程以来的个人小习作，</p>
-<p>从比较早期的程序比如自动还原魔方</p>
-<p>到后来稍微具有一点儿规模的应用程序<br>
-比如中国象棋（带GUI）、AI四子棋（带GUI）、拼音输入法等等</p>
-<p>以及带领小团队编写的综合图像处理系统PicLab（带GUI）</p>
-<p>另外还有一些神经网络方面的实践<br>
-RNN的文本情绪识别（也尝试了CNN就是结果比较惨不忍睹）<br>
-RankIQA图像质量评估<br>
-基于深度学习的SAR图像车辆目标自动识别（正在做的毕业设计）</p>
-<p>目前上传的项目并不多，主要作为展示之用。<br>
-在数学建模竞赛中的一些更多的习作还有待整理。</p>
+                <p>中国象棋属于二人对抗性游戏的一种，本习作基于Qt实现了支持网络对战的象棋软件，还支持残局的保存与恢复</p>
+<p>GitHub链接：https://github.com/QianG0104/Chinese_Chess_Player</p>
+<p>基本规则：<br>
+以下三种情况被认为己方负：<br>
+（1）	己方的帅（将）被对方棋子吃掉。（此处设计为将死或将被吃掉均可）<br>
+（2）	己方发出认输请求。<br>
+（3）	己方走棋超出每步时间限制。</p>
+<p>软件功能：<br>
+（1）	实现软件的主界面和菜单栏，点击菜单栏弹出弹窗进行连接。<br>
+（2）	server端等待连接时可以取消，client端能输入对战的IP及端口，并显示成功建立连接。<br>
+（3）	QT绘制象棋棋盘及棋子。<br>
+（4）	软件能依据规则正确走子。<br>
+（5）	软件能自动判断胜负，被将军时发出特殊音效；提供了认输按钮，一方认输游戏结束；每步走子有时间限制，超时判负。<br>
+（6）	游戏结束，在server端和client端分别弹窗说明游戏结束，并注明获胜方。<br>
+（7）	菜单栏拥有残局输入的入口，选择文件载入加载残局，建立连接进行对战。<br>
+（8）	残局对战的保存文件要求采用固定格式（后附说明）。<br>
+（9）	对战进行中可以点击相应按钮，保存残局到本地文件，此时server/client端都会将残局保存到本地文件</p>
+<p>残局文件格式<br>
+以字符串方式保存，方便助教检查作业时进行测试。<br>
+文件分为两部分，每部分第一行代表颜色（red/black）<br>
+接下来有7行，分别代表将/士/象/马/车/炮/兵的棋子位置<br>
+每行第一个数代表该种棋子的数量n，代表该类棋子的数目，之后会有n个格式为&lt;x,y&gt;的坐标，代表n个棋子的位置。（坐标原点为红方的左下点，记作&lt;0,0&gt;）</p>
 
               </div>
               <div class="toc-container">
@@ -114,6 +122,15 @@ RankIQA图像质量评估<br>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://qiang0104.github.io/post/welcome/">
+              <h3 class="post-title">
+                WELCOME
+              </h3>
+            </a>
+          </div>
         
 
         
